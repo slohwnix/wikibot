@@ -6,8 +6,8 @@ Le chatbot Wikipedia est une application web qui permet aux utilisateurs de pose
 Clonez le repo Github ou téléchargez les fichiers
 Ouvrez le fichier index.html dans votre navigateur web
 Utilisation
-Entrez une question ou un sujet dans le champ de texte "user-input"
-Appuyez sur le bouton "send" ou appuyez sur la touche "Entrée" pour envoyer votre question au chatbot
+Entrez un mot dans le champ de texte 
+Appuyez sur le bouton "envoyer" o pour envoyer votre question au chatbot
 Le chatbot renverra une réponse contenant des informations de l'API de Wikipédia sur le sujet de votre question.
 
 ### Documentation du code
