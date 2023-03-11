@@ -1,15 +1,16 @@
-Chatbot Wikipedia
-Description
+###Chatbot Wikipedia
+###Description
 Le chatbot Wikipedia est une application web qui permet aux utilisateurs de poser des questions à propos de n'importe quel sujet et d'obtenir des informations à partir de l'API de Wikipédia. Le chatbot est conçu pour être facile à utiliser et à comprendre pour les utilisateurs de tous niveaux.
 
-Installation
+###Installation
 Clonez le repo Github ou téléchargez les fichiers
 Ouvrez le fichier index.html dans votre navigateur web
 Utilisation
 Entrez une question ou un sujet dans le champ de texte "user-input"
 Appuyez sur le bouton "send" ou appuyez sur la touche "Entrée" pour envoyer votre question au chatbot
 Le chatbot renverra une réponse contenant des informations de l'API de Wikipédia sur le sujet de votre question.
-Documentation du code
+
+###Documentation du code
 Le code JavaScript de l'application est bien documenté pour faciliter la compréhension et la modification. Voici une liste des principales fonctions et variables utilisées :
 
 const chatbotMessages: une variable qui contient l'élément HTML qui contiendra les messages du chatbot
