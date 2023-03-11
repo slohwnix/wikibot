@@ -20,7 +20,11 @@ async function sendRequest(query) {
     const pageData = JSON.parse(data.contents);
     const pageId = Object.keys(pageData.query.pages)[0];
     const extract = pageData.query.pages[pageId].extract;
-    addMessage(extract, 'bot');
+    if (extract) {
+      addMessage(extract, 'bot');
+    } else {
+      addMessage("Aucune réponse trouvée. Merci de vérifier l'orthographe du mot.", 'bot');
+    }
   } catch (error) {
     addMessage("Désolé, je n'ai pas trouvé d'informations à ce sujet.", 'bot');
   }
@@ -28,8 +32,9 @@ async function sendRequest(query) {
 
 // Gérer l'événement lorsqu'un message est envoyé
 function handleSend() {
-  const text = userInput.value;
+  const text = userInput.value.trim(); // supprime les espaces vides au début et à la fin
   if (!text) {
+    addMessage("Merci de saisir un mot.", 'bot');
     return;
   }
   addMessage(text, 'user');
@@ -45,3 +50,4 @@ document.querySelector('form').addEventListener('submit', function (event) {
   event.preventDefault();
   handleSend();
 });
+
