@@ -23,7 +23,7 @@ async function sendRequest(query) {
     if (extract) {
       addMessage(extract, 'bot');
     } else {
-      addMessage("Aucune réponse trouvée. Merci de vérifier l'orthographe du mot.", 'bot');
+      addMessage("Erreur : Aucune réponse trouvée. Merci de vérifier l'orthographe du mot.", 'bot');
     }
   } catch (error) {
     addMessage("Désolé, je n'ai pas trouvé d'informations à ce sujet.", 'bot');
